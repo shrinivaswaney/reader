@@ -1,10 +1,5 @@
-import { Text, View } from 'react-native';
+import { Redirect } from 'expo-router';
 
 export default function Index() {
-  return (
-    <View>
-      <Text>Welcome to the Index Page</Text>
-      <Text>This is the main entry point of the application.</Text>
-    </View>
-  );
+  return <Redirect href={'/home'} />;
 }
